@@ -19,7 +19,7 @@
     width: 300vw;
     height: 100%;
     display: flex;
-    transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out; 
 }
 
 .imgWrapper{
