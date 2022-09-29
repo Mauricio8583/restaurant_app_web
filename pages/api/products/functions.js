@@ -1,6 +1,6 @@
 import Product from "../../../models/Product";
 
-async function getMethod(method, req, res){
+export async function getMethod(method, req, res){
     if(method === "POST"){
         try{
             const product = await Product.create(req.body);
@@ -11,12 +11,63 @@ async function getMethod(method, req, res){
     }
     if(method === "GET"){
         try{
-            const products = await Product.find();
-            return res.status(200).json(products);
+            const product = await Product.find();
+            return res.status(200).json(product);
         }catch(err){
             return res.status(500).json(err)
         }
     }
+    if(method === "PUT"){
+        try{
+            const product = await Product.create(req.body);
+            return res.status(201).json(product);            
+        }catch(err){
+            return res.status(500).json(err)            
+        }
+    }
+    if(method === "DELETE"){
+        try{
+            const product = await Product.create(req.body);
+            return res.status(201).json(product);            
+        }catch(err){
+            return res.status(500).json(err)            
+        }
+    }
 }
 
-export default getMethod
+
+export async function getMethodByID(method, id, req, res){
+    if(method === "POST"){
+        try{
+            const product = await Product.create(req.body);
+            return res.status(201).json(product);            
+        }catch(err){
+            return res.status(500).json(err)            
+        }
+    }
+    if(method === "GET"){
+        try{
+            const product = await Product.findById(id);
+            return res.status(200).json(product);
+        }catch(err){
+            return res.status(500).json(err)
+        }
+    }
+    if(method === "PUT"){
+        try{
+            const product = await Product.create(req.body);
+            return res.status(201).json(product);            
+        }catch(err){
+            return res.status(500).json(err)            
+        }
+    }
+    if(method === "DELETE"){
+        try{
+            const product = await Product.create(req.body);
+            return res.status(201).json(product);            
+        }catch(err){
+            return res.status(500).json(err)            
+        }
+    }
+}
+

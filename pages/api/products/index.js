@@ -1,8 +1,8 @@
 import dbConnect from "../../../lib/mongoConnection";
-import getMethod from "./functions";
+import { getMethod } from "./functions";
 
 export default async function handler(req, res){
-    const { method } = req;
+    const { method} = req;
 
     dbConnect();
 
