@@ -26,7 +26,9 @@ export const Navbar = () => {
       </div>
       <div className={styles.items}>
         <ul className={styles.list}>
+          <Link href="/">
           <li className={styles.listItem}>Homepage</li>
+          </Link>
           <li className={styles.listItem}>Products</li>
           <li className={styles.listItem}>Menu</li>
           <h1 style={{width: "120px", height: "69px", color: 'white', marginBottom: "40px", marginLeft: "10px" }}>Food Order</h1>
