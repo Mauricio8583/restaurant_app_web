@@ -1,0 +1,34 @@
+.container{
+    padding: 50px;
+    display: flex;
+}
+
+.products{
+    flex: 1;
+}
+
+.orders{
+    flex: 1;
+}
+
+.productsTable, .ordersTable{
+    width: 100%;
+    border-spacing: 20px;
+    text-align: left;
+}
+
+.buttons{
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.buttons:first-child{
+    background-color: teal;
+    margin-right: 10px;
+}
+
+.buttons{
+    background-color: crimson;
+}

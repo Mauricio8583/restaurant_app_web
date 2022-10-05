@@ -1,0 +1,14 @@
+.main{
+    height: 40px;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #d1411e;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
