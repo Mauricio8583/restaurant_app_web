@@ -84,7 +84,7 @@ const index = ({products, orders}) => {
                         <td>{order._id}</td>
                         <td>{order.customer}</td>
                         <td>$ {order.total}</td>
-                        <td>{order.status}</td>
+                        <td>{status[order.status]}</td>
                         <td>{order.payment === 0 ? (<span>Cash</span>) : (<span>Paid</span>)}</td>
                         <td>
                             <button className={styles.buttons} onClick={() => handleStatus(order._id)}>Next Stage</button>
